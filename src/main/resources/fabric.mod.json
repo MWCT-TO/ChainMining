@@ -1,25 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "chain-mining",
+	"id": "chainmining",
 	"version": "${version}",
 	"name": "Chain Mining",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Press ` to enable Chain Mining",
 	"authors": [
-		"Me!"
+		"ZhuangLanTong"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MWCT-TO/ChainMining"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/chain-mining/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"zhuanglantong.chain_mining.ExampleMod"
+			"zhuanglantong.chain_mining.ChainMining"
+		],
+		"client": [
+			"zhuanglantong.chain_mining.ChainMiningClient"
 		],
 		"fabric-datagen": [
-			"zhuanglantong.chain_mining.ExampleModDataGenerator"
+			"zhuanglantong.chain_mining.ChainMiningDataGenerator"
 		]
 	},
 	"mixins": [
