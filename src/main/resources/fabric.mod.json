@@ -1,33 +1,24 @@
 {
 	"schemaVersion": 1,
-	"id": "chainmining",
+	"id": "chain-mining",
 	"version": "${version}",
 	"name": "Chain Mining",
-	"description": "Press ` to enable Chain Mining",
+	"description": "按住shift时启用连锁采集",
 	"authors": [
-		"ZhuangLanTong"
+		"zhuanglantong"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/MWCT-TO/ChainMining"
+		"homepage": "https://github.com/ZhuangLanTong/ChainMining",
+		"sources": "https://github.com/ZhuangLanTong/ChainMining"
 	},
-	"license": "MIT",
+	"license": "CC0-1.0",
 	"icon": "assets/chain-mining/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"zhuanglantong.chain_mining.ChainMining"
-		],
-		"client": [
-			"zhuanglantong.chain_mining.ChainMiningClient"
-		],
-		"fabric-datagen": [
-			"zhuanglantong.chain_mining.ChainMiningDataGenerator"
 		]
 	},
-	"mixins": [
-		"chain-mining.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.14.22",
 		"minecraft": "~1.20",
